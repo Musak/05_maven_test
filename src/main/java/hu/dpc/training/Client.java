@@ -13,6 +13,7 @@ package hu.dpc.training;
 public class Client {
     public static void main(String[] args) {
         // call dependency method before and after update
+    	System.out.println(Weather.getWeather());
     }
     
 }
