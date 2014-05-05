@@ -25,14 +25,6 @@
         </plugins>
     </build>
     
-    <dependencies>
-    	<dependency>
-	    	<groupId>hu.dpc.training</groupId>
-	    	<artifactId>weather-tool</artifactId>
-	    	<version>1.0-SNAPSHOT</version>
-	    	<scope>compile</scope>
-	   	</dependency>
-    </dependencies>
     <repositories>
 	    <repository>
 	    	<snapshots>
@@ -42,5 +34,14 @@
 			<name>libs-snapshot</name>
 			<url>http://192.168.226.126/artifactory/libs-snapshot</url>
 	    </repository>
-  </repositories>
+  	</repositories>
+  	
+    <dependencies>
+    	<dependency>
+	    	<groupId>hu.dpc.training</groupId>
+	    	<artifactId>weather-tool</artifactId>
+	    	<version>1.0-SNAPSHOT</version>
+	    	<scope>compile</scope>
+	   	</dependency>
+    </dependencies>
 </project>
