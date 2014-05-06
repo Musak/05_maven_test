@@ -36,6 +36,14 @@
 	    </repository>
   	</repositories>
   	
+  	<distributionManagement>
+		<snapshotRepository>
+			<id>linux</id>
+			<name>sc-snapshots</name>
+			<url>http://192.168.226.103:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
     <dependencies>
     	<dependency>
 	    	<groupId>hu.dpc.training</groupId>
