@@ -25,24 +25,32 @@
         </plugins>
     </build>
     
-    <repositories>
-	    <repository>
-	    	<snapshots>
+	<repositories>
+		<repository>
+			<snapshots>
 	    		<enabled>true</enabled>
 	    	</snapshots>
 			<id>snapshots</id>
 			<name>libs-snapshot</name>
 			<url>http://192.168.226.126/artifactory/libs-snapshot</url>
 	    </repository>
-  	</repositories>
+	</repositories>
   	
   	<distributionManagement>
 		<snapshotRepository>
-			<id>linux</id>
+			<id>myrepo</id>
 			<name>sc-snapshots</name>
-			<url>http://192.168.226.103:8081/artifactory/libs-snapshot-local</url>
+			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
+	<!--  <distributionManagement>
+	    <snapshotRepository>
+	        <id>Musaks-MacBook-Pro.local</id>
+	        <name>Musaks-MacBook-Pro.local-snapshots</name>
+	        <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+	    </snapshotRepository>
+	</distributionManagement> -->
+
 	
     <dependencies>
     	<dependency>
